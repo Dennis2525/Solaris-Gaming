@@ -1,0 +1,27 @@
+TEAM_VALE = DarkRP.createJob("Vale", {
+    color = Color(28, 28, 28),
+    model = "models/defcon/loudmantis/shadows/vale.mdl",
+    description = [[
+        Auri's Custom Squad
+       Epsilon Squad
+    ]],
+    weapons = {
+        "at_sw_dc17m",
+        "at_sw_dc15sa",
+        "realistic_hook"
+    },
+    command = "vale",
+    max = 0,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Republic Commandos",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(350)
+        ply:SetMaxHealth(350)
+        ply:SetArmor(150)
+        ply:SetMaxArmor(150)
+    end,
+})
