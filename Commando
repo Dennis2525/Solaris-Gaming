@@ -1,0 +1,27 @@
+Added Base RC Class
+
+TEAM_RC = DarkRP.createJob("Republic Commando", {
+    color = Color(37, 34, 34),
+    model = "models/rcremastered/clones/commando.mdl",
+    description = [[
+        Commando
+    ]],
+    weapons = {
+        "at_sw_dc17m_original",
+        "tfa_swch_dc15sa"
+    },
+    command = "RC",
+    max = 0,
+    salary = 200,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Republic Commandos",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(350)
+        ply:SetMaxHealth(350)
+        ply:SetArmor(255)
+        ply:SetMaxArmor(255)
+    end,
+})
