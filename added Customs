@@ -1,0 +1,60 @@
+})
+
+TEAM_HC = DarkRP.createJob("Homer Custom", {
+    color = Color(36, 61, 255),
+    model = "models/jajoff/sps/cgicum/tc13j/raiden.mdl",
+    description = [[
+          Homers Custom CT Model.
+    ]],
+    weapons = {
+        "rw_sw_dual_dc17s",
+        "rw_sw_westarm5",
+        "alydus_fortificationbuildertablet",
+        "alydus_fusioncutter",
+        "realistic_hook",
+    },
+    command = "hc",
+    max = 0,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Custom Class's",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(400)
+        ply:SetMaxHealth(400)
+        ply:SetArmor(200)
+        ply:SetMaxArmor(200)
+    end,
+})
+
+TEAM_HPC = DarkRP.createJob("Hyperion Custom", {
+    color = Color(36, 61, 255),
+    model = "models/jajoff/sps/cgicum/tc13j/raiden.mdl",
+    description = [[
+          Homers Custom CT Model.
+    ]],
+    weapons = {
+        "rw_sw_dc15x",
+        "rw_sw_westarm5",
+        "weapon_bactainjector",
+        "rw_ammo_distributor",
+        "weapon_defibrillator",
+        "realistic_hook",
+    },
+    command = "hpc",
+    max = 0,
+    salary = 150,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Custom Class's",
+    canDemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(400)
+        ply:SetMaxHealth(400)
+        ply:SetArmor(200)
+        ply:SetMaxArmor(200)
+    end,
+})
